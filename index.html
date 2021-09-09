@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* CSS Reset */
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/bgg.jpg');
+            color: white;
+
+        }
+
+        .left {
+            position: absolute;
+            left: 10px;
+            top: 1px;
+            display: inline-block;
+            /* border: 0.5px solid yellow; */
+            font-size: 20px;
+            padding: 1px 20px;
+        }
+
+        .left div {
+            text-align: center;
+            margin-top: -15px;
+        }
+
+        .left img {
+            width: 110px;
+            height: 110px;
+        }
+
+        .mid {
+            display: block;
+            width: 41%;
+            margin: 5px auto;
+            /* border: 0.5px solid red; */
+        }
+
+        .right {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            display: inline-block;
+            /* border: 0.5px solid blue; */
+            font-size: 25px;
+            padding: 12px 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 24px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: pink;
+            text-decoration: underline;
+
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 0.8px solid grey;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(39, 38, 38);
+        }
+
+        .container {
+            border: 0.5px solid white;
+            margin: 70px auto;
+            padding: 75px;
+            width: 33%;
+            border-radius: 5px;
+        }
+
+        .formgrp input {
+            text-align: center;
+            display: block;
+            width: 460px;
+            padding: 0px;
+            margin: 15px auto;
+            border: 2px solid yellow;
+            font-size: 22px;
+            border-radius: 5px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 460px;
+            margin: 45px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Rishi Fitness</div>
+        </div>
+        <!-- mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Mumbai</h1>
+        <form action="noaction.php">
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">
+                submit
+            </button>
+
+        </form>
+    </div>
+</body>
+
+</html>
